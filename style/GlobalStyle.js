@@ -24,6 +24,10 @@ const GlobalStyle = createGlobalStyle`
         --color-neutral-lightest:#E9E9E9;
         --color-neutral-light:#F4F4F4;
 
+        // Theme
+        --theme-dark:#222222;
+        --theme-default:#FFFFFF;
+
         // Basic Colors
         --color-white:#FFFFFF;
         --color-black:#000000;
@@ -39,6 +43,7 @@ const GlobalStyle = createGlobalStyle`
     html,body{
         margin:0;
         padding:0;
+        background: ${props => props.theme ? `var(${props.theme})` : 'var(--theme-default)' };
     }
 
     h1,h2,h3,h4,h5,h6,p,ul,li,strong,span,label,i{

@@ -6,7 +6,6 @@ const Main = styled.main`
     width:100%;
     height:100vh;
     padding:64px;
-    border:64px solid var(--color-white);
     background:var(--color-primary);
     box-sizing:border-box;
     margin:0;
@@ -41,7 +40,7 @@ function Home(){
             <Display center>Hi, I'm Gilson Santos - Designer UX/UI 😎</Display>
             <Subdisplay white center>I love Design and Programming ❤️</Subdisplay>
         </Main>
-        <GlobalStyle/>
+        <GlobalStyle theme="--theme-dark"/>
         </>
     )
 }
