@@ -6,7 +6,6 @@ import { Display, Subdisplay, Link, BodyHighlight } from './../style/Typography'
 const Main = styled.main`
     width:100%;
     height:100vh;
-    padding:64px;
     background:var(--color-primary);
     box-sizing:border-box;
     margin:0;
