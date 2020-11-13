@@ -13,6 +13,7 @@ const GlobalStyle = createGlobalStyle`
         // Brand Colors
         --color-primary:#312BD9;
         --color-secondary:#FFDB3D;
+        --color-secondary-light:#FFE263;
 
         // Neutral colors
         --color-neutral-darkest:#262626;
@@ -37,7 +38,7 @@ const GlobalStyle = createGlobalStyle`
     *{
         font-family: var(--font-primary), cursive;
         font-size:16px;
-        box-sizing:border-box;  
+        box-sizing:border-box;
     }
 
     html,body{
@@ -45,13 +46,23 @@ const GlobalStyle = createGlobalStyle`
         background: ${props => props.theme ? `var(${props.theme})` : 'var(--theme-default)' };
     }
 
-    h1,h2,h3,h4,h5,h6,p,ul,li,strong,span,label,i{
+    h1,h2,h3,h4,h5,h6,a,p,ul,li,strong,span,label,i{
         margin:0;
         padding:0;
     }
 
-    p,ul,li,strong,span,label,i{
+    a,p,ul,li,strong,span,label,i{
         font-family:var(--font-secondary);
+    }
+
+    a{
+        transition:all .16s ease-in-out;
+        color:var(--color-secondary);
+        font-weight:200;
+        &:hover{
+            cursor:pointer;
+            color:var(--color-secondary-light);
+        }
     }
     
 `;
