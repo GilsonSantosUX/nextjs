@@ -1,7 +1,14 @@
-import styled from 'styled-components'
+import react from 'react'
 
-import GlobalStyle from './../style/GlobalStyle';
-import { Display, Subdisplay, Link, BodyHighlight } from './../style/Typography';
+// Import Nextjs
+import Link from 'next/link';
+
+// Styles
+import styled from 'styled-components'
+import GlobalStyle from '../style/GlobalStyle';
+import { Display, Subdisplay, BodyHighlight } from '../style/Typography';
+
+import Header from './components/Header';
 
 const Main = styled.main`
     width:100%;
@@ -19,7 +26,7 @@ const Main = styled.main`
 function Home(){
     return (
         <>
-        <title>Gilson Santos UX</title>
+        <Header/>
         <Main>
             <Display center white>Hi, I'm Gilson Santos - Designer UX/UI 😎</Display>
             <Subdisplay white center>I love Design and Programming ❤️</Subdisplay>
