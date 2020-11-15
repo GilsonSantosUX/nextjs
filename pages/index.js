@@ -5,10 +5,10 @@ import Link from 'next/link';
 
 // Styles
 import styled from 'styled-components'
-import GlobalStyle from '../style/GlobalStyle';
-import { Display, Subdisplay, BodyHighlight } from '../style/Typography';
+import GlobalStyle from '../src/style/GlobalStyle';
+import { Display, Subdisplay, BodyHighlight } from '../src/style/Typography';
 
-import Header from './components/Header';
+import Header from '../src/components/Header';
 
 const Main = styled.main`
     width:100%;
