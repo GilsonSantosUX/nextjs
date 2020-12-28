@@ -35,6 +35,15 @@ const GlobalStyle = createGlobalStyle`
 
     }
 
+    @font-face {
+        font-family: var(--font-primary);
+        font-weight: 100 900;
+        font-display: swap;
+        font-style: normal;
+        font-named-instance: 'Regular';
+        // src: url('Inter-roman.var.woff2') format('woff2');
+    }
+
     *{
         font-family: var(--font-primary), cursive;
         font-size:16px;
