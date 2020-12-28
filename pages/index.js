@@ -34,7 +34,6 @@ function Home(){
             <BodyHighlight color="var(--color-secondary)" align="center">Update in brief.</BodyHighlight>
         </Main>
         <GlobalStyle theme="--theme-dark"/>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-G5YBNBNZ3N"></script>
         </>
     )
 }
