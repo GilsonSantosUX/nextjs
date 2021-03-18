@@ -1,7 +1,7 @@
-import { Display, Link } from '../src/style/Typography';
-import GlobalStyle from '../src/style/GlobalStyle';
+import { Display, Link } from '../style/Typography';
+import GlobalStyle from '../style/GlobalStyle';
 
-import Header from '../src/components/Header';
+import Header from '../components/Header';
 
 function About(){
     return (
