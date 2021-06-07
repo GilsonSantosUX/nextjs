@@ -6,32 +6,41 @@ import Link from 'next/link';
 // Styles
 import styled from 'styled-components'
 import GlobalStyle from '../style/GlobalStyle';
-import { Display, Subdisplay, BodyHighlight } from '../style/Typography';
+import { Display, Heading, Subdisplay, BodyHighlight, Detail } from '../style/Typography';
 
 import Header from '../components/Header';
+import Topbar from '../components/Navbar/Topbar';
 
 const Main = styled.main`
     width:100%;
     height:100vh;
-    background:var(--color-primary);
+    
+
+    background:var(--color-bg-1);
     box-sizing:border-box;
+
     margin:0;
+    margin-top:4rem;
+    padding:5rem 6rem;
+
     display:flex;
     flex-direction:column;
-    gap:48px;
-    justify-content:center;
-    align-items:center;
+    gap:2.6rem;
+    justify-content:flex-start;
+    align-items:flex-start;
 `;
 
 function Home(){
     return (
         <>
         <Header/>
+        <Topbar/>
         <Main>
-            <Display center white>Hi, I'm Gilson Santos - Designer UX/UI 😎</Display>
-            <Subdisplay white center>I love Design and Programming ❤️</Subdisplay>
-            {/* <Link href="/about">About me</Link> */}
-            <BodyHighlight color="var(--color-secondary)" align="center">Update in brief.</BodyHighlight>
+            <Heading  primary white weight="700">👋 Oi, Eu sou Gilson Santos</Heading>
+            <Detail color="--color-accent-3" weight="bold">Product Designer</Detail>
+            <Display  primary white weight="900">Elevado nível de experiência em web design e conhecimento de desenvolvimento, produzindo trabalhos de qualidade.</Display>
+            <Subdisplay white>I love Design and Programming ❤️</Subdisplay>
+            {/* <button>Conhecer mais</button> */}
         </Main>
         <GlobalStyle theme="--theme-dark"/>
         </>

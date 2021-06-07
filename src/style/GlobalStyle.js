@@ -2,41 +2,59 @@ import { createGlobalStyle } from 'styled-components';
 
 
 const GlobalStyle = createGlobalStyle`
-    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
 
     :root{
         // Font brand
-        --font-primary: 'Bebas Neue';
-        --font-secondary: 'Lato', sans-serif;
+        --font-primary: 'Poppins Lato', sans-serif;
+        --font-accent: 'Lato', sans-serif;
 
         // Brand Colors
-        --color-primary:#312BD9;
-        --color-secondary:#FFDB3D;
-        --color-secondary-light:#FFE263;
+        --color-primary:#3640B2;
+        --color-accent:#3BD86D;
+		--color-gradient:linear-gradient(90deg,#3640B2,#3BD86D);
+
+		// Primary Colors
+		--color-primary-gradient:linear-gradient(90deg,#0D1680,#3640B2);
+		--color-primary-1:#0D1680;
+		--color-primary-2:#1F2999;
+		--color-primary-3:#3640B2;
+		--color-primary-4:#525CCC;
+		--color-primary-5:#737CE5;
+
+		// Accent Colors
+		--color-accent-gradient:linear-gradient(90deg,#238241,#62E08A);
+		--color-accent-1:#238241;
+		--color-accent-2:#2FAD57;
+		--color-accent-3:#3BD86D;
+		--color-accent-4:#62E08A;
+		--color-accent-5:#89E8A7;
+
 
         // Neutral colors
-        --color-neutral-darkest:#262626;
-        --color-neutral-dark:#474747;
-        --color-neutral-base:#515151;
-        --color-neutral-gray-3:#5C5C5C;
-        --color-neutral-gray-2:#6B6B6B;
-        --color-neutral-gray:#D4D4D4;
-        --color-neutral-lightest:#E9E9E9;
-        --color-neutral-light:#F4F4F4;
+		--color-neutral-0:#000000;
+        --color-neutral-1:#2B2B2B;
+        --color-neutral-2:#575757;
+        --color-neutral-3:#828282;
+        --color-neutral-4:#ACACAC;
+        --color-neutral-5:#D5D5D5;
+		--color-neutral-6:#FFFFFF;
+
+		// Backgrounds Colors
+		--color-bg-1:#0E0E0E;
+		--color-bg-2:#1D1D1D;
+		--color-bg-3:#E3E3E3;
+		--color-bg-4:#F1F1F1;
 
         // Theme
-        --theme-dark:#222222;
-        --theme-default:#FFFFFF;
-
-        // Basic Colors
-        --color-white:#FFFFFF;
-        --color-black:#000000;
+        --theme-dark:var(--color-bg-1);
+        --theme-default:var(--color-neutral-6);
 
     }
 
     @font-face {
-        font-family: var(--font-primary);
+        font-family: var(--font-accent);
         font-weight: 100 900;
         font-display: swap;
         font-style: normal;
@@ -45,8 +63,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     *{
-        font-family: var(--font-primary), cursive;
-        font-size:16px;
+        font-family: var(--font-accent), cursive;
+        font-size:1rem;
         box-sizing:border-box;
     }
 
@@ -57,21 +75,22 @@ const GlobalStyle = createGlobalStyle`
     }
 
     h1,h2,h3,h4,h5,h6,a,p,ul,li,strong,span,label,i{
+		font-family:var(--font-accent);
         margin:0;
         padding:0;
     }
 
     a,p,ul,li,strong,span,label,i{
-        font-family:var(--font-secondary);
+        font-family:var(--font-accent);
     }
 
     a{
         transition:all .16s ease-in-out;
-        color:var(--color-secondary);
+        color:var(--theme-default);
         font-weight:200;
         &:hover{
             cursor:pointer;
-            color:var(--color-secondary-light);
+            color:var(--color-neutral-5);
         }
     }
     
@@ -156,7 +175,7 @@ const GlobalTheme = createGlobalStyle`
 
 	//Theme Colors ------------------------------------------------------ //
 	--color-brand-primary: #ff4000;
-	--color-brand-secondary: #343a40;
+	--color-brand-accent: #343a40;
 
 	// Base Colors ------------------------------------------------------ //
 	--color-principal-dark: #323232;
@@ -171,13 +190,13 @@ const GlobalTheme = createGlobalStyle`
 	--color-primary-light: #ffb399;
 	--color-primary-lightest: #ffece5;
 
-	// Secondary -------------------------------------------------------- //
-	--color-secondary-gradient: linear-gradient(270deg, #343a40 0%, #505962 100%);
-	--color-secondary-darkest: #2e3338;
-	--color-secondary-dark: #505962;
-	--color-secondary-base: #343a40;
-	--color-secondary-light: #c7ccd1;
-	--color-secondary-lightest: #f1f2f4;
+	// Accent -------------------------------------------------------- //
+	--color-accent-gradient: linear-gradient(270deg, #343a40 0%, #505962 100%);
+	--color-accent-darkest: #2e3338;
+	--color-accent-dark: #505962;
+	--color-accent-base: #343a40;
+	--color-accent-light: #c7ccd1;
+	--color-accent-lightest: #f1f2f4;
 
 	// Neutral Colors -------------------------------------------------- //
 	--color-neutral-gradient: linear-gradient(270deg, #777777 0%, #333333 100%);
