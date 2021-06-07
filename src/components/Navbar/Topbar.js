@@ -10,13 +10,13 @@ const Navbar =  styled.nav`
     display:flex;
     flex-direction:row;
     align-items:center;
-    justify-content:space-between;
+    justify-content:center;
     gap:16px;
 
     position:fixed;
     top:0;
     left:0;
-    padding:0 6rem;
+    padding:0 2.6rem;
     margin:0;
 
     background:var(--color-bg-2);

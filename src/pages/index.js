@@ -20,6 +20,7 @@ const Main = styled.main`
     box-sizing:border-box;
 
     margin:0;
+    padding:0 2.6rem;
 
     display:flex;
     flex-direction:column;
