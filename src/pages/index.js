@@ -17,6 +17,8 @@ const Main = styled.main`
     
 
     background:var(--color-bg-1);
+    background-image: url("/assets/imgs/bg-image.png");
+    background-repeat: no-repeat;
     box-sizing:border-box;
 
     margin:0;
