@@ -19,11 +19,12 @@ const Navbar =  styled.nav`
     padding:0 6rem;
     margin:0;
 
-    background:#212121;
+    background:var(--color-bg-2);
 `
 
 const ListGroup = styled.ul`
     width:100%;
+    max-width:72rem;
     height:100%;
 
     display:flex;

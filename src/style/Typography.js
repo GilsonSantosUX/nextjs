@@ -61,4 +61,15 @@ const Detail = styled.p`
 
 `;
 
-export { Display, Subdisplay, Link, Heading, BodyHighlight, Detail };
+const Container = styled.div`
+    max-width:72rem;
+    display:flex;
+    flex-direction:column;
+    gap:2rem;
+
+    padding-top:8rem;
+    box-sizing:border-box;
+
+`;
+
+export { Display, Subdisplay, Link, Heading, BodyHighlight, Detail, Container };
